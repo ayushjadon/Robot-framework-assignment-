@@ -38,17 +38,16 @@ User enter username and password than login
     Click Button  ${login}
     sleep  2
 goto electronics options
-    Scroll Element Into View  ${electronics}
+    click Element  ${electronics}
+    sleep  2
+    Scroll Element Into View  xpath://*[@id="container"]/div/div[2]/div/div/span[1]
     sleep  2
 select powerbank
-    Mouse Down  xpath://*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[1]/a[9]
+    Mouse Down  xpath://*[@id="container"]/div/div[2]/div/div/div/div[2]/a[4]
     sleep  1
-    Mouse Over  xpath://*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[2]/a[2]
+    click Element  xpath://*[@id="container"]/div/div[2]/div/div/div/div[2]/a[4]
     sleep  1
-    Scroll Element Into View  xpath://*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[2]/a[2]
 pick product mi powerbank
-    Click Element  xpath://*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[2]/a[2]
-    sleep  1
     Mouse Down On Link  xpath://*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[3]/div/a[2]
     sleep  1
     Click Element  ${select mi powerbank}
@@ -73,7 +72,7 @@ ${input username} =  8076606282
 ${password} =  xpath://*[@class='_2IX_2- _3mctLh VJZDxU']
 ${input password} =  Ayush671029
 ${login} =  xpath://*[@class='_2KpZ6l _2HKlqd _3AWRsL']
-${electronics} =  xpath://body/div[@id='container']/div[1]/div[2]/div[1]/div[1]/div[5]/a[1]/div[1]/div[1]/img[1]
+${electronics} =  //*[@id="container"]/div/div[2]/div/div/div[3]/a/div[1]/div/img
 ${select mi powerbank} =  xpath://*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[3]/div/a[2]
 ${add item} =  xpath://*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button
 ${back to homepage} =  xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[1]/div/a[1]/img
