@@ -71,7 +71,7 @@ ${browser} =  gc
 ${username} =  xpath://*[@class='_2IX_2- VJZDxU']
 ${input username} =  8076606282
 ${password} =  xpath://*[@class='_2IX_2- _3mctLh VJZDxU']
-${input password} =  navyforce671029
+${input password} =  Ayush671029
 ${login} =  xpath://*[@class='_2KpZ6l _2HKlqd _3AWRsL']
 ${electronics} =  xpath://body/div[@id='container']/div[1]/div[2]/div[1]/div[1]/div[5]/a[1]/div[1]/div[1]/img[1]
 ${select mi powerbank} =  xpath://*[@id="container"]/div/div[3]/div[1]/div[2]/div[2]/div/div[3]/div/a[2]
